@@ -5,7 +5,9 @@ Examples of html tags according to the HTML5 spec
 
 ### Pull the remote repo
 
-`git clone https://github.com/saveenchad/cse141L_ab3.git`
+(ssh) `git clone git@github.com:saveenchad/html-tutorial.git`
+
+(https) `git clone https://github.com/saveenchad/html-tutorial.git`
 
 ### Make a local dev branch to work on
 
