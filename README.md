@@ -32,3 +32,5 @@ Examples of html tags according to the HTML5 spec
 `git merge master dev` to merge your commits onto master
 
 `git push origin master` to push code to remote repo
+
+`git checkout dev` move back to dev branch to do more work
