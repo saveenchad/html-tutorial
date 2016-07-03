@@ -2,6 +2,113 @@
 <html lang="en-US">
   <head>
     <title>Script Example</title>
+
+    <h2>Definition:</h2>
+    <p>
+    	Scripts are small programs that can be embedded using the &lt;script&gt; element.
+    </p>
+
+    <h2>Examples:</h2>
+
+    <h3>Example 1:</h3>
+    <p>
+    	This example is on w3: </br>
+    	It is a form with a script that sets the value of the form&#39;s &lt;output&gt; element to say "Hello World". </br>
+    </p>
+    <h4>
+    	The code looks like:
+    </h4>
+    <p style="color:blue">
+    	&lt;form name="main"&gt; </br>
+    </p>
+    <p style = "margin-left:2em;color:blue">
+  		Result: &lt;output name="result">&lt;/output&gt; </style> </br>
+  	</p>
+  	<p style = "margin-left:2em;color:blue">
+  		&lt;script&gt; </br>
+  	</p>
+  	<p style = "margin-left:4em;color:blue">
+    	document.forms.main.elements.result.value = &#39;This is coming from the &lt;script&gt; tag.&#39; </br>
+    </p>
+    <p style = "margin-left:2em;color:blue">
+  		&lt;/script&gt; </br>
+  	</p>
+  	<p style="color:blue">
+		&lt;/form&gt; </br>
+	</p>
+
+	<h4>
+    	The results look like:
+    </h4>
+
+    <form name="main">
+  		Result: <output name="result"></output>
+  		<script>
+    		document.forms.main.elements.result.value = 'This is coming from the <script> tag.';
+  		</script>
+	</form>
+	
+	</br>
+	
+	<h3>Example 2:</h3>
+	<p> 
+		This example changes the value of a specific id using &lt;script&gt; tags. 
+	</p>
+
+	<h4>
+    	The code looks like:
+    </h4>
+
+	<p style="color:blue"> 
+		&lt;p id="demo"&gt;Original message&lt;/p&gt;
+	</p>
+
+	<p style="color:blue">
+		&lt;script&gt;
+	</p>
+	<p style="margin-left:2em;color:blue">
+		document.getElementById("demo").innerHTML = "Hello Sara!";
+	</p>
+	<p style="color:blue">
+		&lt;/script&gt;
+	</p>
+
+	<h4>
+    	The results look like:
+    </h4>
+
+    <p id="demo">Original message</p>
+
+	<script>
+		document.getElementById("demo").innerHTML = "This is the message from the script tag. Instead of the message 'Original message', the result would be this long message. Weird! huh?! :D";
+	</script>
+
+	</br>
+
+	<h3>Example 3:</h3>
+	<p> 
+		This example changes the value of a specific name using &lt;script&gt; tags. 
+	</p>
+
+	<h4>
+    	The code looks like:
+    </h4>
+
+
+
+    <h4>
+    	The results look like:
+    </h4>
+    <form name="myform">
+    	Result: <output name="demo">Original message</output>
+
+		<script>
+			document.forms.myform.elements.demo.value = "This is the message from the script tag. Instead of the message 'Original message', the result would be this long message. Weird! huh?! :D";
+		</script>
+	</form>
+
+
+
   </head>
   <body>
   </body>
