@@ -1,0 +1,12 @@
+
+h2 {
+	color: hotpink;
+}
+
+a:hover {
+    color: red;
+}
+
+a:click {
+	color: purple;
+}
