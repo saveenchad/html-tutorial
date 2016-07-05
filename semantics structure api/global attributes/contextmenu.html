@@ -1,8 +1,30 @@
 <!doctype html>
 <html lang="en-US">
   <head>
-    <title>Context Menu Example</title>
+    <title>Context Menu</title>
   </head>
   <body>
-  </body>
+    <h2>Definition:</h2>
+    <p>An attribute that gives an element a context menu by tying it with a menu element</p>
+
+    <h2>Usage:</h2>
+    <p><b>THIS ATTRIBUTE IS ONLY SUPPORTED IN FIREFOX!</b></p>
+    <p><pre>&lt;element contextmenu="unique-menu-name"&gt;&lt;element&gt;</pre></p>
+    <p><pre>&lt;menu type="context" id="unique-menu-name"&gt;</pre></p>
+    <p><pre>  &lt;menuitem ... &gt;</pre></p>
+    <p><pre>  ...</pre></p>
+    <p><pre>&lt;/menu&gt;</pre></p>
+
+    <h2>Examples:</h2>
+    <p><pre>&lt;p contextmenu="p-menu"&gt;I have a context menu!&lt;/p&gt;</pre></p>
+    <p><pre>&lt;menu type="context" id="p-menu"&gt;</pre></p>
+    <p><pre>  &lt;menuitem label="my custom option"&gt;</pre></p>
+    <p><pre>&lt;/menu&gt;</pre></p>
+    <p>Right click on the paragraph below to see the context menu</p>
+    <p contextmenu="p-menu">I have a context menu</p>
+    <menu type="context" id="p-menu">
+      <menuitem label="my custom option">
+    </menu>
+
+    </body>
 </html>

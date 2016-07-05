@@ -1,8 +1,47 @@
 <!doctype html>
 <html lang="en-US">
   <head>
-    <title>Data-X Example</title>
+    <title>Data-*</title>
+
+    <style>
+      div {
+        border: 1px solid black;
+        display: inline-block;
+      }
+    </style>
+
+    <script>
+      function calcArea(rect) {
+        var x = rect.getAttribute("data-width");
+        var y = rect.getAttribute("data-length");
+        alert("the area of this rectangle is " + (x * y) + " px^2");
+      }
+    </script>
   </head>
   <body>
-  </body>
+    <h2>Definition:</h2>
+    <p>An attribute that allows data to be stored by the programmer in any element</p>
+
+    <h2>Usage:</h2>
+    <pre>&lt;element data-insert-keyword-here-that-represents-what-youre-storing="value-to-store"&gt;&lt;/element&gt;</pre>
+
+    <h2>Examples:</h2>
+    <p>Given the following JS function:</p>
+    <pre>function calcArea(rect) {</pre>
+    <pre>  var x = rect.getAttribute("data-width");</pre>
+    <pre>  var y = rect.getAttribute("data-length");</pre>
+    <pre>  alert("the area of this rectangle is " + (x * y) + " px^2");</pre>
+    <pre>}</pre><br>
+
+    <pre>&lt;div data-width="100" data-length="300" onclick="calcArea(this)"&gt;100 x 300&lt;/div&gt;</pre>
+    <pre>&lt;div data-width="200" data-length="200" onclick="calcArea(this)"&gt;200 x 200&lt;/div&gt;</pre>
+    <pre>&lt;div data-width="200" data-length="300" onclick="calcArea(this)"&gt;200 x 300&lt;/div&gt;</pre>
+    <pre>&lt;div data-width="700" data-length="200" onclick="calcArea(this)"&gt;700 x 200&lt;/div&gt;</pre>
+
+    <div data-width="100" data-length="300" style="width:100px;height:300px;" onclick="calcArea(this)">100 x 300</div>
+    <div data-width="200" data-length="200" style="width:200px;height:200px;" onclick="calcArea(this)">200 x 200</div>
+    <div data-width="200" data-length="300" style="width:200px;height:300px;" onclick="calcArea(this)">200 x 300</div>
+    <div data-width="700" data-length="200" style="width:700px;height:200px;" onclick="calcArea(this)">700 x 200</div>
+
+    </body>
 </html>

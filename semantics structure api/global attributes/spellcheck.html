@@ -1,8 +1,30 @@
 <!doctype html>
 <html lang="en-US">
   <head>
-    <title>Spellcheck Example</title>
+    <title>Spell Check</title>
+
+    <style>
+      textarea {
+        border: 1px solid black;
+        font-size: 15px;
+        border-radius: 4px;
+      }
+    </style>
   </head>
   <body>
+    <h2>Definition:</h2>
+    <p>An attribute that sets whether or not a text will have spellcheck applied to its contents</p>
+
+    <h2>Usage:</h2>
+    <p><pre>&lt;element spellcheck="true | false"&gt;&lt;/element&gt;</pre></p>
+
+    <h2>Examples:</h2>
+    <p>Here is a text area with spellcheck applied. Try it out!</p>
+    <pre>&lt;textarea spellcheck="true"&gt;&lt;/textarea&gt;</pre>
+    <textarea spellcheck="true" rows="5"></textarea><br>
+
+    <p>Here is a text area without spellcheck applied. Try it out!</p>
+    <pre>&lt;textarea spellcheck="false"&gt;&lt;/textarea&gt;</pre>
+    <textarea spellcheck="false" rows="5"></textarea><br>
   </body>
 </html>

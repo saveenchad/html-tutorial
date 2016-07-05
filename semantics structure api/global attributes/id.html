@@ -1,8 +1,49 @@
 <!doctype html>
 <html lang="en-US">
   <head>
-    <title>ID Example</title>
+    <title>ID</title>
+
+    <style>
+      #tiny-font {
+        font-size: 8px;
+      }
+
+      #red {
+        color: red;
+      }
+    </style>
+
+    <script>
+      function changeColor() {
+        var el = document.getElementById("red");
+        el.style.color = "green";
+        el.innerHTML = "I'm green now!";
+      }
+    </script>
   </head>
   <body>
+    <h2>Definition:</h2>
+    <p>An attribute that allows a specific element to be selected via CSS or JS</p>
+
+    <h2>Usage:</h2>
+    <p><pre>&lt;element id="token"&gt;&lt;/element&gt;</pre></p>
+
+    <h2>Examples:</h2>
+    <p>Given the following CSS:</p>
+    <p><pre>#tiny-font { font-size: 8px; }</pre></p>
+    <p><pre>#red { color: red; }</pre></p>
+    <p>And the following JS:</p>
+    <p><pre>function changeColor() {</pre></p>
+    <p><pre>  var el = document.getElementById("red");</pre></p>
+    <p><pre>  el.style.color = "green";</pre></p>
+    <p><pre>  el.innerHTML = "I'm green now!";</pre></p>
+    <p><pre>}</pre></p><br>
+
+    <p><pre>&lt;p id="tiny-font"&gt;I'm tiiiny!&lt;/p&gt;</pre></p>
+    <p id="tiny-font">I'm tiiiny!</p>
+
+    <p><pre>&lt;p id="red"&gt;I'm red!&lt;/p&gt;</pre></p>
+    <p id="red">I'm red!</p>
+    <button onclick="changeColor()">change color</button>
   </body>
 </html>

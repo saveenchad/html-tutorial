@@ -1,8 +1,48 @@
 <!doctype html>
 <html lang="en-US">
   <head>
-    <title>Class Example</title>
+    <title>Class</title>
+    <style>
+      .big-font {
+        font-size: 30px;
+      }
+
+      .blue {
+        color: blue;
+      }
+    </style>
+
+    <script>
+      function changeColor() {
+        var el = document.getElementsByClassName("blue")[0];
+        el.style.color = "red";
+        el.innerHTML = "I'm red now!"
+      }
+    </script>
   </head>
   <body>
-  </body>
+    <h2>Definition:</h2>
+    <p>An attribute that allows a set of elements to be selected via CSS and JS selectors</p>
+
+    <h2>Usage:</h2>
+    <p><pre>&lt;element class="token"&gt;&lt;/element&gt;</pre></p>
+
+    <h2>Examples:</h2>
+    <p>Given the following CSS:</p>
+    <p><pre>.big-font { font-size: 30px; }</pre></p>
+    <p><pre>.blue { color: blue; }</pre></p>
+    <p>And the following JS:</p>
+    <p><pre>function changeColor() {</pre></p>
+    <p><pre>  var el = document.getElementsByClassName("blue")[0];</pre></p>
+    <p><pre>  el.style.color = "red";</pre></p>
+    <p><pre>  el.innerHTML = "I'm red now!";</pre></p>
+    <p><pre>}</pre></p><br>
+
+    <p><pre>&lt;p class="big-font"&gt;I'm HUUUGE!&lt;/p&gt;</pre></p>
+    <p class="big-font">I'm HUUUGE!</p>
+
+    <p><pre>&lt;p class="blue"&gt;I'm blue!&lt;/p&gt;</pre></p>
+    <p class="blue">I'm blue!</p>
+    <button onclick="changeColor()">change color</button>
+    </body>
 </html>
