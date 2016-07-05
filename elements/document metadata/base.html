@@ -2,7 +2,42 @@
 <html lang="en-US">
   <head>
     <title>Base Example</title>
+    <a href="elements/root/00starthere.html">Back</a>
+
+    <base href="../../images" target="_blank">
+
   </head>
   <body>
+  	
+
+    <h2>Definition:</h2>
+    <p>
+    	The &lt;base&gt; tag specifies the base URL/target for all relative URLs in a document. </br>
+
+		There can be at maximum one &lt;base&gt; element in a document, and it must be inside the &lt;head&gt; element.
+    </p>
+
+    <h2>Examples:</h2>
+
+    <h3>Example 1:</h3>
+    <p>
+    	show the new cat's picture without using the complete URL:
+    </p>
+	
+	<h4>
+    	The code looks like:
+  	</h4>
+  	<p style="color:blue">
+  		&lt;base href="../../images"&gt; </br>
+  		&lt;img src="cat.jpg" width="200" height="200" alt="Cat"&gt;
+  	</p>
+	<h4>
+    	The results look like:
+  	</h4>
+  	<img src="cat.jpg" width="200" height="200" alt="Cat">
+
+  	<h3>Example 2:</h3>
+    <p>
+    	If you clink on the back button on top of the screen, it will open a new window and redirect the new window to 00starthere.html. This is because we are using a base tag as base URL. </p>
   </body>
 </html>
