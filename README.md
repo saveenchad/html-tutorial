@@ -1,3 +1,6 @@
+##### Things to fix
+In semantics/global attributes, tabindex.html, title.html, and translate.html need examples.
+
 # html-tutorial
 Examples of html tags according to the HTML5 spec
 
