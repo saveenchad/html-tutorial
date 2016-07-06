@@ -1,9 +1,9 @@
 ##### Things to fix
 In semantics/global attributes, tabindex.html, title.html, and translate.html need examples.
-In elements/document metadata/base.html ==> the picture needs to be fixed.
 In elements/scripting/template.html ==> needs examples
 In elements/links/area.html ==> needs examples
 In elements/edits/def.html ==> I can't find any tags that's called def
+
 
 
 
