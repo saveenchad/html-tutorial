@@ -3,128 +3,123 @@
   <head>
     <title>Canvas Example</title>
 
+    <script>
+      var c = document.getElementById("myCanvas3");
+      var ctx = c.getContext("2d");
+      ctx.font = "45px Times New Roman";
+      ctx.strokeText("Sara's Canvas",10,50);
+    </script>
 
-    <a href="../root/00starthere.html">Back</a>
+    <script>
+      var c = document.getElementById("myCanvas2");
+      var ctx = c.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(95,50,40,0,2*Math.PI);
+      ctx.stroke();
+    </script>
+  </head>
+  <body>
+    <a href="../../00starthere.html">Back</a>
     
-
     <h2>Definition:</h2>
     <p>
-    	The HTML &lt;canvas&gt; element is used to draw graphics, on the fly, via scripting (usually JavaScript). The &lt;canvas&gt; element is only a container for graphics. You must use a script to actually draw the graphics. Canvas has several methods for drawing paths, boxes, circles, text, and adding images.
+      The HTML &lt;canvas&gt; element is used to draw graphics, on the fly, via scripting (usually JavaScript). The &lt;canvas&gt; element is only a container for graphics. You must use a script to actually draw the graphics. Canvas has several methods for drawing paths, boxes, circles, text, and adding images.
     </p>
 
     <h2>Examples:</h2>
 
     <h3>Example 1:</h3>
     <p>
-    	Draw an empty rectangle:
+      Draw an empty rectangle:
     </p>
     <h4>
-    	The code looks like:
-    </h4>
-
-    <p style="color:blue"> 
-    	&lt;canvas id="myCanvas" width="400" height="50" style="border:10px solid #000000;"&gt;
-			Your browser does not support the HTML5 canvas tag.
-		&lt;/canvas&gt;
-	</p>
-	
-	<h4>
-    	The results look like:
-    </h4>
-
-	<p style="color:blue"> 
-    	<canvas id="myCanvas" width="400" height="50" style="border:10px solid #000000;">
-			Your browser does not support the HTML5 canvas tag.
-		</canvas>
-	</p>
-
-
-	<h3>Example 2:</h3>
-    <p>
-    	Draw a circle using JavaScript:
-    </p>
-    <h4>
-    	The code looks like:
-    </h4>
-
-    <p style="color:blue"> 
-	    &lt;canvas id="myCanvas2" width="200" height="100" style="border:10px solid #A3F3D3;"&gt;
-			Your browser does not support the HTML5 canvas tag.
-		&lt;/canvas&gt;
-	</p>
-	<p style="color:blue"> 
-		&lt;script&gt;
-	</p>
-	<p style = "margin-left:4em;color:blue">
-		var c = document.getElementById("myCanvas2"); </br>
-		var ctx = c.getContext("2d"); </br>
-		ctx.beginPath(); </br>
-		ctx.arc(95,50,40,0,2*Math.PI); </br>
-		ctx.stroke(); </br>
-	</p>
-	<p style="color:blue"> 
-		&lt;/script&gt;
-	</p>
-
-    <h4>
-    	The results look like:
-    </h4>
-
-    <canvas id="myCanvas2" width="200" height="100" style="border:10px solid #A3F3D3;">
-		Your browser does not support the HTML5 canvas tag.
-	</canvas>
-
-	<script>
-		var c = document.getElementById("myCanvas2");
-		var ctx = c.getContext("2d");
-		ctx.beginPath();
-		ctx.arc(95,50,40,0,2*Math.PI);
-		ctx.stroke();
-	</script>
-
-
-	<h3>Example 3:</h3>
-    <p>
-    	Draw a stroke text:
-    </p>
-    <h4>
-    	The code looks like:
+      The code looks like:
     </h4>
 
     <p style="color:blue">
-	    &lt;canvas id="myCanvas3" width="270" height="80" style="border:5px solid #d3d3d3;"&gt;
-			Your browser does not support the HTML5 canvas tag.
-		&lt;/canvas&gt;
-	</p>
-	<p style="color:blue">
-		&lt;script&gt;
-	</p>
-	<p style = "margin-left:4em;color:blue">
-		var c = document.getElementById("myCanvas3"); </br>
-		var ctx = c.getContext("2d"); </br>
-		ctx.font = "45px Times New Roman"; </br>
-		ctx.strokeText("Sara's Canvas",10,50); </br>
-	</p>
-	<p style="color:blue">
-		&lt;/script&gt;
-	</p>
+      &lt;canvas id="myCanvas" width="400" height="50" style="border:10px solid #000000;"&gt;
+      Your browser does not support the HTML5 canvas tag.
+      &lt;/canvas&gt;
+    </p>
 
     <h4>
-    	The results look like:
+      The results look like:
+    </h4>
+
+    <p style="color:blue">
+      <canvas id="myCanvas" width="400" height="50" style="border:10px solid #000000;">
+        Your browser does not support the HTML5 canvas tag.
+      </canvas>
+    </p>
+
+
+    <h3>Example 2:</h3>
+    <p>
+      Draw a circle using JavaScript:
+    </p>
+    <h4>
+      The code looks like:
+    </h4>
+
+    <p style="color:blue">
+      &lt;canvas id="myCanvas2" width="200" height="100" style="border:10px solid #A3F3D3;"&gt;
+      Your browser does not support the HTML5 canvas tag.
+      &lt;/canvas&gt;
+    </p>
+    <p style="color:blue">
+      &lt;script&gt;
+    </p>
+    <p style = "margin-left:4em;color:blue">
+      var c = document.getElementById("myCanvas2"); </br>
+      var ctx = c.getContext("2d"); </br>
+      ctx.beginPath(); </br>
+      ctx.arc(95,50,40,0,2*Math.PI); </br>
+      ctx.stroke(); </br>
+    </p>
+    <p style="color:blue">
+      &lt;/script&gt;
+    </p>
+
+    <h4>
+      The results look like:
+    </h4>
+
+    <canvas id="myCanvas2" width="200" height="100" style="border:10px solid #A3F3D3;">
+      Your browser does not support the HTML5 canvas tag.
+    </canvas>
+
+    <h3>Example 3:</h3>
+    <p>
+      Draw a stroke text:
+    </p>
+    <h4>
+      The code looks like:
+    </h4>
+
+    <p style="color:blue">
+      &lt;canvas id="myCanvas3" width="270" height="80" style="border:5px solid #d3d3d3;"&gt;
+      Your browser does not support the HTML5 canvas tag.
+      &lt;/canvas&gt;
+    </p>
+    <p style="color:blue">
+      &lt;script&gt;
+    </p>
+    <p style = "margin-left:4em;color:blue">
+      var c = document.getElementById("myCanvas3"); </br>
+      var ctx = c.getContext("2d"); </br>
+      ctx.font = "45px Times New Roman"; </br>
+      ctx.strokeText("Sara's Canvas",10,50); </br>
+    </p>
+    <p style="color:blue">
+      &lt;/script&gt;
+    </p>
+
+    <h4>
+      The results look like:
     </h4>
 
     <canvas id="myCanvas3" width="270" height="80" style="border:5px solid #d3d3d3;">
-		Your browser does not support the HTML5 canvas tag.
-	</canvas>
-
-	<script>
-		var c = document.getElementById("myCanvas3");
-		var ctx = c.getContext("2d");
-		ctx.font = "45px Times New Roman";
-		ctx.strokeText("Sara's Canvas",10,50);
-	</script>
-
-  </head>
-  <body>
+      Your browser does not support the HTML5 canvas tag.
+    </canvas>
   </body>
 </html>

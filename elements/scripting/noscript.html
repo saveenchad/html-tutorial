@@ -2,54 +2,50 @@
 <html lang="en-US">
   <head>
     <title>noScript Example</title>
-
     
-    <a href="../root/00starthere.html">Back</a>
-
-
+    <script>
+    document.getElementById("demo").innerHTML = "This is the message in &lt;script&gt; tag.";
+    </script>
+  </head>
+  <body>
+    <a href="../../00starthere.html">Back</a>
     <h2>Definition:</h2>
     <p>
-    	The &lt;noscript&gt; tag is used to provide an alternate content for users that have disabled scripts in their browser or have a browser that doesn't support client-side scripting. 
-    	It defines an alternate content for users that do not support client-side scripts.
-    	The content inside the &lt;noscript&gt; element will only be displayed if scripts are not supported, or are disabled in the user's browser:
+      The &lt;noscript&gt; tag is used to provide an alternate content for users that have disabled scripts in their browser or have a browser that doesn't support client-side scripting.
+      It defines an alternate content for users that do not support client-side scripts.
+      The content inside the &lt;noscript&gt; element will only be displayed if scripts are not supported, or are disabled in the user's browser:
     </p>
 
     <h2>Examples:</h2>
 
-    	<h3>Example 1:</h3>
+    <h3>Example 1:</h3>
 
-    	<h4>
-    	The code looks like:
-    	</h4>
+    <h4>
+      The code looks like:
+    </h4>
 
-    	<p style="color:blue"> 
-			&lt;p id="demo"&gt;Original message&lt;/p&gt;
-		</p>
-    	<p style="color:blue">
-    		&lt;script&gt;
-    	</p>
-    	<p style = "margin-left:4em;color:blue">
-			document.getElementById("demo").innerHTML = &#39;This is the message in &lt;script&gt; tag.&#39;
-		</p>
-		<p style="color:blue">
-    		&lt;script&gt;
-    	</p>
-    	<p style="color:blue">
-			&lt;noscript&gt;This is the message with &lt;noscript&gt; tag.&lt;/noscript&gt;
-		</p>
-    	
-    	<h4>
-    	The results look like:
-    	</h4>
+    <p style="color:blue">
+      &lt;p id="demo"&gt;Original message&lt;/p&gt;
+    </p>
+    <p style="color:blue">
+      &lt;script&gt;
+    </p>
+    <p style = "margin-left:4em;color:blue">
+      document.getElementById("demo").innerHTML = &#39;This is the message in &lt;script&gt; tag.&#39;
+    </p>
+    <p style="color:blue">
+      &lt;script&gt;
+    </p>
+    <p style="color:blue">
+      &lt;noscript&gt;This is the message with &lt;noscript&gt; tag.&lt;/noscript&gt;
+    </p>
 
-    	<p id="demo">Original message</p>
-    	<script>
-			document.getElementById("demo").innerHTML = "This is the message in &lt;script&gt; tag.";
-		</script>
+    <h4>
+      The results look like:
+    </h4>
 
-		<noscript>This is the message with &lt;noscript&gt; tag.</noscript>
+    <p id="demo">Original message</p>
 
-  </head>
-  <body>
+    <noscript>This is the message with &lt;noscript&gt; tag.</noscript>
   </body>
 </html>
