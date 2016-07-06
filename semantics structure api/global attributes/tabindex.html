@@ -2,6 +2,22 @@
 <html lang="en-US">
   <head>
     <title>Tab Index</title>
+
+    <style>
+      form {
+        border: 1px solid black;
+        border-radius: 4px;
+        padding: 5px;
+        max-width: 250px;
+      }
+
+      input {
+        border: 1px solid #ccc;
+        line-height: 25px;
+        font-size: 16px;
+        margin: 10px;
+      }
+    </style>
   </head>
   <body>
     <h2>Definition:</h2>
@@ -11,6 +27,16 @@
     <pre>&lt;element tabindex="0 | 1 | 2 | ..."&gt;&lt;/element&gt;</pre>
 
     <h2>Examples:</h2>
-
-    </body>
+    <p>Use the tab button to cycle through the following form</p>
+    <pre>&lt;form&gt;</pre>
+    <pre>  &lt;input type="text" placeholder="First Name" tabindex="3" /&gt;</pre>
+    <pre>  &lt;input type="text" placeholder="Last Name" tabindex="2" /&gt;</pre>
+    <pre>  &lt;input type="email" placeholder="Email" tabindex="1" /&gt;</pre>
+    <pre>&lt;/form&gt;</pre>
+    <form>
+      <input type="text" placeholder="First Name" tabindex="3" />
+      <input type="text" placeholder="Last Name" tabindex="2" />
+      <input type="email" placeholder="Email" tabindex="1" />
+    </form>
+  </body>
 </html>

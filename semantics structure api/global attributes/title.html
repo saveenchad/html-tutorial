@@ -2,6 +2,12 @@
 <html lang="en-US">
   <head>
     <title>Title</title>
+
+    <style>
+      .dashed {
+        border: 1px dashed black;
+      }
+    </style>
   </head>
   <body>
     <h2>Definition:</h2>
@@ -11,6 +17,8 @@
     <p><pre>&lt;element title="some message"&gt;&lt;/element&gt;</pre></p>
 
     <h2>Examples:</h2>
-
-    </body>
+    <pre>&lt;p title="Be sure to drink your Ovaltine!"&gt;I have a secret message. Hover over me to find out what it is!&lt;/p&gt;</pre>
+    <p class="dashed" title="Be sure to drink your Ovaltine!">I have a secret message. Hover over me to find out what it is!</p>
+    <p>Notice that you can hover anywhere in the dashed box and still get the tooltip to show</p>
+  </body>
 </html>

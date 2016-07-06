@@ -6,13 +6,20 @@
   <body>
     <h2>Definition:</h2>
     <p>
-      An attribute that specifies whether or not the element's text should be translated when the page is translated.
+      Un attribut qui definit la langue principale (BCP 47) pour le contenu de l'element.
+      Cela se fait generalement dans la balise html pour l'ensemble du document.
     </p>
 
     <h2>Usage:</h2>
-    <p><pre>&lt;element translate="yes | no | "&gt;&lt;/element&gt;</pre></p>
+    <p><b>THIS ATTRIBUTE IS NOT SUPPORTED BY ANY WIDELY USED BROWSERS!</b></p>
+    <p><pre>&lt;element traduire="oui | non"&gt;&lt;/element&gt;</pre></p>
 
-    <h2>Examples:</h2>
+    <h2>Exemples:</h2>
+    <pre>&lt;html lang="fr"&gt;</pre>
+    <pre>  ...</pre>
+    <pre>&lt;/html&gt;</pre><br>
 
-    </body>
+    <pre>&lt;p translate="no"&gt;Ce document a ete redige en francais, mais vous ne pouvez pas traduire, donc vous ne saurez pas...&lt;/p&gt;</pre>
+    <p translate="no">Ce document a ete redige en francais, mais vous ne pouvez pas traduire, donc vous ne saurez pas...</p><br>
+  </body>
 </html>
