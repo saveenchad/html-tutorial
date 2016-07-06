@@ -1,8 +1,27 @@
 <!doctype html>
 <html lang="en-US">
   <head>
-    <title>Audio Example</title>
+    <title>Audio</title>
   </head>
   <body>
+    <h2>Definition:</h2>
+    <p>An element that allows audio files to be played on a web page</p>
+
+    <h2>Usage:</h2>
+    <pre>&lt;audio autoplay controls loop muted preload="auto | metadata | none" src="URL"&gt;</pre>
+    <pre>  &lt;source src=".mp3 | .ogg | .wav" type="audio/mp3 | audio/ogg | audio/wav"&gt;</pre>
+    <pre>  ...</pre>
+    <pre>&lt;/audio&gt;</pre>
+
+    <h2>Examples:</h2>
+    <p>This example was originally found on the W3Schools tutorial for the audio tag</p>
+    <pre>&lt;audio controls&gt;</pre>
+    <pre>  &lt;source src="horse.mp3" type="audio/mp3"&gt;</pre>
+    <pre>&lt;/audio&gt;</pre>
+    <audio controls>
+      <source src="horse.mp3" type="audio/mp3">
+    </audio>
+    <p>Note: the audio content would play if it existed...</p>
+
   </body>
 </html>
