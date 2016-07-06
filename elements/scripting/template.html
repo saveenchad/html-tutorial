@@ -2,57 +2,34 @@
 <html lang="en-US">
   <head>
     <title>Template Example</title>
-
-    
-    <a href="../root/00starthere.html">Back</a>
-
-
-    <h2>Definition:</h2>
-    <p>
-    	The HTML &lt;template&gt; tag allows you to declare HTML fragments that can be cloned and inserted into the document by script. </br></br>
-
-		The contents of the &lt;template&gt; tag are not rendered upon page load. Rather, they are cloned and inserted into the DOM when they need to be used - which could be based on an event such as user input. </br></br>
-
-		The basic idea behind the &lt;template&gt; element is that it can be used over and over again. You can use the template as is, or you could add to it, for example, data from a database. Therefore it could be used to populate a large table with data, or a select list with new options perhaps based on user input. </br></br>
-    </p>
-
-    <h2>Examples:</h2>
-
-    	<h3>Example 1:</h3>
-
-    	<h4>
-    	The code looks like:
-    	</h4>
-
-
-
-    	
-    	<h4>
-    	The results look like:
-    	</h4>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
   </head>
   <body>
+    <a href="../../00starthere.html">Back</a>
+
+    <h2>Definition:</h2>
+    <p>Allows repeated HTML to be condensed into a template that can be appended to another element via JS</p>
+
+    <h2>Usage:</h2>
+    <p>First, parent HTML is required so that the template can be appended to it</p>
+    <pre>&lt;ol id="myList"&gt;</pre>
+    <pre>&lt;/ol&gt;</pre>
+
+    <p>Next, make a template of the item that will be appended to the parent HTML</p>
+    <pre>&lt;template id="myListItemTemplate"&gt;</pre>
+    <pre>  &lt;li class="myListItem"&gt;&lt;/li&gt;</pre>
+    <pre>&lt;/template&gt;</pre>
+
+    <p>Finally, add some JS to dynamically append your template to your parent HTML</p>
+    <pre>&lt;script&gt;</pre>
+    <pre>  //grab an instance of the template</pre>
+    <pre>  var temp = document.querySelector('#myListItemTemplate');</pre>
+    <pre>  var tempDate = temp.content.querySelectorAll("li");</pre>
+    <pre>  tempDate[0].textContent = "Template list item";</pre><br>
+    <pre>  //clone the template and add it to the parent HTML</pre>
+    <pre>  var list = document.getElementById("myList");</pre>
+    <pre>  var newItem = document.importNode(temp.content, true);</pre>
+    <pre>  list[0].appendChild(newItem);</pre>
+    <pre>  ...</pre>
+    <pre>&lt;/script&gt;</pre>
   </body>
 </html>

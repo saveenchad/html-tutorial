@@ -1,8 +1,32 @@
-<!doctype html>
-<html lang="en-US">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title>xhtml</title>
   </head>
   <body>
+    <a href="../00starthere.html">Back</a>
+
+    <h2>Definition:</h2>
+    <p>An attribute that essentially sets strict mode for the html document. It won't load unless all rules are followed!</p>
+
+    <h2>Usage:</h2>
+    <pre>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</pre>
+    <pre>&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;</pre>
+    <pre>  ...</pre>
+    <pre>&lt;/html&gt;</pre>
+
+    <p>The following rules need to be followed in order to be rendered properly:</p>
+    <ol>
+      <li>The xhtml doctype is mandatory.</li>
+      <li>The xmlns attribute in the html tag is mandatory</li>
+      <li>The following elements are mandatory: html, head, title, and body</li>
+      <li>All elements are properly nested</li>
+      <li>All start tags must have matching end tags</li>
+      <li>All start and end tags must be in lower case</li>
+      <li>All documents must have only one root element</li>
+      <li>All attributes must be in lower case</li>
+      <li>All attribute values must be quoted</li>
+      <li>Any form of attribute minimization is forbidden</li>
+    </ol>
   </body>
 </html>

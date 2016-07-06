@@ -4,5 +4,19 @@
     <title>Nesting</title>
   </head>
   <body>
+    <a href="../00starthere.html">Back</a>
+
+    <p>HTML includes rules that allow only certain elements to be nested within other elements.</p>
+    <p>This prevents a web developer from running wild with their tags</p>
+    <p>For example:</p>
+    <pre>&lt;ol&gt;</pre>
+    <pre>  &lt;ol&gt;</pre>
+    <pre>    &lt;li&gt;Nested list element&lt;/li&gt;</pre>
+    <pre>  &lt;/ol&gt;</pre>
+    <pre>  &lt;li&gt;Normal list element 1&lt;/li&gt;</pre>
+    <pre>  &lt;li&gt;Normal list element 2&lt;/li&gt;</pre>
+    <pre>&lt;/ol&gt;</pre>
+
+    <p>This is <b>disallowed</b> because lists should only have list items within it.</p>
   </body>
 </html>
